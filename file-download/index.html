@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="node_modules\sweetalert2\dist\sweetalert2.min.css">
+    <link rel="stylesheet" href="socialMediaUpload.css">
+
+</head>
+
+<body>
+    <div class="formContainer">
+        <div class="formTitle">
+            Upload Social Media Information
+        </div>
+        <div class="formContent">
+            <form action="#">
+                <div class="row">
+                    <div class="column">
+                        Title
+                        <br>
+                        <textarea name="title" id="title" cols="30" rows="3" placeholder="LB Leasing"
+                            required></textarea>
+                        <br /><br />
+                        Effective Date
+                        <br>
+                        <input type="date" name="effectiveDate" id="effectiveDate" required>
+                        <br /><br />
+                    </div>
+                    <div class="column">
+                        Contact Details
+                        <br>
+                        <textarea name="contactDetails" id="contactDetails" cols="30" rows="3" required
+                            placeholder="Kaun - 071 51111111 , Saman - 012 5565478"></textarea>
+                        <br /></br>
+                        Expiration Date
+                        <br>
+                        <input type="date" name="expirationDate" id="expirationDate" required>
+                        <br><br>
+                        <br />
+                    </div>
+                </div>
+                <span id="description">Description</span>
+                <br />
+                <div id="editor">
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div id="imagebutton">Select the image</div>
+                        <input type='file' id="image" style="display:none" accept="image/*" required>
+                    </div>
+                    <div class="column">
+                        <br>
+                        <p id="filename">No image selected</p>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div id="preview">Preview</div>
+                    </div>
+
+                    <div class="column">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="ckeditor\ckeditor.js"></script>
+    <script src="ckeditor\samples\js\sample.js"></script>
+    <script src="node_modules\sweetalert2\dist\sweetalert2.min.js"></script>
+    <script src="fileDownload.js"></script>
+
+</body>
+
+</html>

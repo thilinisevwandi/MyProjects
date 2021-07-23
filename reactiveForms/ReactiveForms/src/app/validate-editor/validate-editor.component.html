@@ -1,0 +1,16 @@
+
+
+<form [formGroup]="myForm">
+  Value:{{myForm.Value|json}}
+  <input type="text" formControlName="email">
+  <div *ngIf="email.invalid && email.touched">
+    Your email is not valid
+  </div>
+      <input type="text" formControlName="password">
+      <input type="text" formControlName="age" >
+      <div *ngIf="age.invalid && age.touched">
+        {{age.value}} is not valid.vaues should be in {{age.errors.min.actual}}
+      </div>
+
+
+</form>

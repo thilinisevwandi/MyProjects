@@ -1,0 +1,21 @@
+.strength {
+    height: 75vh;
+    width: 20px;
+    border-radius: 20px*.5;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    background: red;
+}
+    .__trans {
+        height: 100%;
+        transform: translateY(100%);
+       
+    }
+    .__ball {
+        width: 20px;
+        height: 20px;
+        border-radius: 1px*.5;
+        background: darken(red, 10%);
+        transform: translateY(-100%);
+        
+    }

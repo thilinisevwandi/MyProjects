@@ -1,0 +1,13 @@
+<form [formGroup]="myForm">
+  Value:{{myForm.Value|json}}
+  <input type="text" formControlName="email">
+  <div formArrayName="phones">
+    <div *ngFor="let phone of phoneForms.controls;let i = index" [formGroupName]="i">
+      <input type="text" formControlName="area">
+      <input type="text" formControlName="prefix">
+      <input type="text" formControlName="line">
+      <button (click)="deletePhone(i)">delete</button>
+    </div>
+  </div>
+<button (click)="addPhone()">Add Phone</button>
+</form>

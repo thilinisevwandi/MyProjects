@@ -1,0 +1,30 @@
+<input type="text" (input) = "setValues($event)" />
+
+  {{values}}
+
+<table>
+  <tr>
+    <td>
+      Index Number
+    </td>
+    <td>
+      Person Name
+    </td>
+    <td>
+      Person Age
+    </td>
+  </tr>
+  <tr *ngFor="let person of tableData ; let myIndex = index;
+  let evenRecord = even;let firstRecord = first;let secondRecord = last;let oddRecord = odd"
+  [ngClass]="{odd:oddRecord,even:evenRecord,second:secondRecord,test:firstRecord}">
+    <td>
+      {{myIndex + 1}}
+    </td>
+    <td>
+      {{person.personName}}
+    </td>
+    <td>
+      {{person.age}}
+    </td>
+  </tr>
+</table>

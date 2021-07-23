@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    /* background-color: #b8c6b8; */
+    /* background-image: linear-gradient(315deg,#b8c6db 0%,#f5f7fa 100%); */
+    background-image: url("background.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+    /* min-height: 100vh; */
+    /* margin-bottom: 50%; */
+}
+
+  .swal2-close{
+    background-color:black;
+    color: red;
+  }
+  .column {
+    width: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:#cccccc;
+    float: left;
+  }
+  
+
+  .previewColumn {
+    width: 50%;
+    /* font-weight: bold; */
+    /* font-size: 1.2rem; */
+    /* color:#cccccc; */
+    float: left;
+  }
+  .swal-height {
+    height: 65%;
+    text-align: right;
+    
+    
+  }
+  .swal-height>.swal2-content  {
+      overflow-y: auto;
+      overflow-x: auto;
+      text-align: right;
+  }
+  .swal2-content{
+      text-align: left;
+  }
+  #description{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color:#cccccc;   
+  }
+
+  #preview{
+    background-color:  #ff4d94;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1.1rem;
+    width: 70%;
+    padding: 0.8rem;
+}
+
+#submit{
+    background-color:#ff0066;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1.1rem;
+    width: 70%;
+    padding: 0.8rem;
+}
+
+button:hover{
+    background-color: #732d91;
+}
+
+button:focus{
+    background-color: #5e3370;
+    outline: none;
+}
+
+.formContainer{
+    background-color:#404040;
+    /* background-image: url("background3.jpg"); */
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100,100,100,0.1);
+    overflow: hidden;
+    width: 60%;
+    max-width: 100%;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    padding-right: 0;
+    padding-left: 9rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    height: 100%;
+}
+
+.formTitle{
+    text-align: center;
+    font-size: 2.0rem;
+    padding: 2.0rem;
+    padding-right: 10rem;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    margin-bottom: 1rem;
+    color:#cccccc;
+    
+}
+
+#effectiveDate{
+    width: 70%;
+    margin-top: 0.5rem;
+    font-family: 'Times New Roman';
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+::-webkit-datetime{
+    width: 6rem;
+}
+#expirationDate{
+    width: 70%;
+    margin-top: 0.5rem;
+    font-family: 'Times New Roman';
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+#title{
+    width: 70%;
+    margin-top: 0.5rem;    
+    height: 100%;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    font-size: 1rem;
+}
+
+#contactDetails{
+    width: 70%;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    font-size: 1rem;
+}
+
+.textEditor{
+    width: 85%;
+    margin-top: 0.5rem;
+    height: 18rem;
+    max-height: 20rem;
+    overflow: auto;
+}
+
+.formContent{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    /* margin-bottom: 3rem; */
+}
+
+#image{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* ::-webkit-file-upload-button {
+    background: black;
+    color: red;
+    padding: 1em;
+    width: 30%;
+    
+  } */
+
+  #imagebutton{   
+    background-color:  #ff4d94;
+    border: none;
+    color:#fff;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1.1rem;
+    width: 70%;
+    padding: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  #logo{
+      width: 10%;
+  }
+

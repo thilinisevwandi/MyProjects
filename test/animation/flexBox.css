@@ -1,0 +1,29 @@
+*{
+    text-align: center;
+}
+
+.container{
+    display:flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rosybrown;
+    height: 1000px;
+    align-items: center;
+    
+}
+.item{
+    background-color: salmon;
+    border: 1px solid olive;
+    flex-basis:200px;
+    height:70px;
+    text-align: center;
+    flex-grow: 1;
+    
+    
+}
+#child{
+    margin: auto;
+}

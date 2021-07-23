@@ -1,0 +1,14 @@
+
+element.style {
+    background-image: url(back.jpeg);
+}
+body.standalone {
+    background-size: cover;
+}
+
+.fp-img {
+    background-image: url(back.jpeg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

@@ -1,0 +1,5 @@
+create local repo for git hub repository...........
+
+
+git init
+git remote add origin url
